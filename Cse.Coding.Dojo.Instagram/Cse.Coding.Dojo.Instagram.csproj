@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Bogus" Version="33.0.2" />
     <PackageReference Include="Cse.InstagramApiSharp" Version="1.78.1" />
   </ItemGroup>
 
