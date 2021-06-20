@@ -1,7 +1,11 @@
-﻿namespace Cse.Coding.Dojo.Instagram.Strategy.AccountTraining
+﻿using Cse.Coding.Dojo.Instagram.Services.InstagramApi;
+using InstagramApiSharp.API;
+using System.Threading.Tasks;
+
+namespace Cse.Coding.Dojo.Instagram.Strategy.AccountTraining
 {
     interface IAccountTraining
     {
-        string AccountTraining();
+        Task<bool> AccountTraining(InstagramApi instagramApi);
     }
 }
