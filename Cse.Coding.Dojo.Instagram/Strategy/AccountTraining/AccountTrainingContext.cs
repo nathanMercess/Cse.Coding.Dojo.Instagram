@@ -12,7 +12,6 @@ namespace Cse.Coding.Dojo.Instagram.Strategy.AccountTraining
 
         public AccountTrainingContext()
         {
-            _strategiesContext.Add(AccountTrainingTypeEnum.LOGIN, new AccountTrainingLogin());
             _strategiesContext.Add(AccountTrainingTypeEnum.LIKE, new AccountTrainingLike());
             _strategiesContext.Add(AccountTrainingTypeEnum.COMMENTS, new AccountTrainingComment());
             _strategiesContext.Add(AccountTrainingTypeEnum.POST, new AccountTrainingPost());

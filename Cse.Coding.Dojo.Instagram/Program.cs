@@ -42,7 +42,7 @@ namespace Cse.Coding.Dojo.Instagram
                 }
             }
 
-            await AccountTrainingContext.AccountTraining(AccountTrainingTypeEnum.POST, InstaApi);
+            await AccountTrainingContext.AccountTraining(AccountTrainingTypeEnum.LIKE, InstaApi);
             return true;
         }
     }
