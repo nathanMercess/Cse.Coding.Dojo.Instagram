@@ -2,6 +2,7 @@
 {
     public enum AccountTrainingTypeEnum
     {
+        LOGIN,
         LIKE, 
         COMMENTS,
         POST

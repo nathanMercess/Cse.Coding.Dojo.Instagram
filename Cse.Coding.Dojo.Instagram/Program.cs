@@ -33,16 +33,11 @@ namespace Cse.Coding.Dojo.Instagram
 
             InstaApi.SetBuild(userSession);
 
-            if (!InstaApi.GetIsUserAuthenticated()) 
-            {
-                var logInResult = await InstaApi.InstagramLoginAsync();
-                if (!logInResult.Succeeded)
-                {
-                    return false;
-                }
-            }
+            var resultLogin = await AccountTrainingContext.AccountTraining(AccountTrainingTypeEnum.LOGIN, InstaApi);
+            
+            if(resultLogin)
+                await AccountTrainingContext.AccountTraining(AccountTrainingTypeEnum.POST, InstaApi);
 
-            await AccountTrainingContext.AccountTraining(AccountTrainingTypeEnum.LIKE, InstaApi);
             return true;
         }
     }

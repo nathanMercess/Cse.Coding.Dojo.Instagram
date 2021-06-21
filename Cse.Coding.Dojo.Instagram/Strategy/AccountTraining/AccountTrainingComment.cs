@@ -20,10 +20,10 @@ namespace Cse.Coding.Dojo.Instagram.Strategy.AccountTraining
 
                 return true;
             }
-            catch (System.Exception)
+            catch (System.Exception ex)
             {
 
-                throw;
+                throw ex;
             }
         }
     }
